@@ -83,7 +83,9 @@ First, you are going to initialize the Terraform backend. Then, you will create 
     Use the previously created DO Spaces access and secret keys to initialize the Terraform backend:
 
     ```shell
-    terraform init  --backend-config="access_key=$DigitalOcean_SPACES_ACCESS_KEY" --backend-config="secret_key=$DO_SPACES_SECRET_KEY"
+    #terraform init  --backend-config="access_key=$DigitalOcean_SPACES_ACCESS_KEY" --backend-config="secret_key=$DO_SPACES_SECRET_KEY"
+
+    terraform init  --backend-config="access_key=$DO_SPACES_ACCESS_KEY" --backend-config="secret_key=$DO_SPACES_SECRET_KEY"
     ```
 
     The output looks similar to the following:
